@@ -1,5 +1,5 @@
 === Sched Embed ===
-Contributors: cftp, johnbillion, simonwheatley
+Contributors: codeforthepeople, johnbillion, simonwheatley
 Tags: sched, sched.org, embed, shortcode
 Requires at least: 3.4
 Tested up to: 3.5
@@ -10,7 +10,11 @@ Embed event content from sched.org into your WordPress site.
 
 == Description ==
 
-This plugin allows you to quickly swap between user accounts in WordPress at the click of a button. You'll be instantly logged out and logged in as your desired user. This is handy for test environments where you regularly log out and in between different accounts, or for adminstrators of sites who need to switch between multiple accounts.
+Due to WordPress security restrictions, the Sched embed method will not work at all when used on a WordPress multisite setup, in single site setups users with an Author or Contributor role will also be unable to use the Sched embed method.
+
+This plugin provides a shortcode which allows you to embed event content from sched.org into your WordPress site.
+
+Plugin development was sponsored by [Internet Retailing](http://internetretailing.net).
 
 == Installation ==
 
@@ -89,6 +93,8 @@ You can specify a colour scheme which is suitable for use on a dark background b
 
 `[sched url="example.sched.org" background="dark"]`
 
+Note that this does not put a dark background behind the schedule, it simply changes the text colour to be suitable for a dark background if your site has one.
+
 = Can I specify the fallback text? =
 
 You can specify the fallback text which will be shown to users who have JavaScript disabled:
@@ -103,10 +109,13 @@ If you don't specify this, the title of the event page will be used.
 
 == Upgrade Notice ==
 
-= 1.0 =
-* Initial release.
+= 1.0.1 =
+* Allow `[sched.org]` to be used as the shortcode in addition to `[sched]`
 
 == Changelog ==
+
+= 1.0.1 =
+* Allow `[sched.org]` to be used as the shortcode in addition to `[sched]`
 
 = 1.0 =
 * Initial release.
