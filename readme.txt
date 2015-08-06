@@ -1,5 +1,5 @@
 === Sched Embed ===
-Contributors: codeforthepeople, johnbillion, simonwheatley
+Contributors: sched, codeforthepeople, johnbillion, simonwheatley
 Tags: sched, sched.org, embed, shortcode
 Requires at least: 3.4
 Tested up to: 3.5
